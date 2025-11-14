@@ -41,7 +41,13 @@
     background: rgba(0,0,0,0.2);
     color: #fff;
     transition: all 0.3s ease;
+    color-scheme: dark;
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 .form-group input:focus,
 .form-group select:focus { border-color: #a8a8ff; background: rgba(0,0,0,0.3); }
 
