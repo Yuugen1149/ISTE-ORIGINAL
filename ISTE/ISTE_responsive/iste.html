@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ISTE - Indian Society for Technical Education</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .about-iste-section {
+            padding: 8rem 2rem 5rem;
+            min-height: 100vh;
+        }
+        .about-iste-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .iste-info-box {
+            background: rgba(10, 14, 39, 0.7);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.2);
+            transition: all 0.3s ease;
+        }
+        .iste-info-box:hover {
+            border-color: rgba(102, 126, 234, 0.4);
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.3);
+            transform: translateY(-5px);
+        }
+        .iste-section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, #667eea 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .iste-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: rgba(255, 255, 255, 0.9);
+            text-align: justify;
+        }
+        .iste-text strong {
+            color: #7AE0FF;
+            font-weight: 700;
+        }
+        .iste-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .iste-stat-item {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+        }
+        .iste-stat-item:hover {
+            background: rgba(102, 126, 234, 0.2);
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        .iste-stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+        .iste-stat-label {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .iste-activities-list {
+            list-style: none;
+            padding: 0;
+        }
+        .iste-activities-list li {
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        .iste-activities-list li:hover {
+            background: rgba(102, 126, 234, 0.2);
+            transform: translateX(10px);
+            border-left-color: #7AE0FF;
+        }
+        .iste-activities-list li::before {
+            content: "✓";
+            margin-right: 1rem;
+            color: #7AE0FF;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+            border: 2px solid rgba(102, 126, 234, 0.4);
+        }
+        .highlight-box .iste-text {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #fff;
+        }
+        .iste-cta-section {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+            .about-iste-section { padding: 6rem 1rem 3rem; }
+            .iste-info-box { padding: 1.5rem; margin-bottom: 1.5rem; }
+            .iste-section-title { font-size: 1.5rem; margin-bottom: 1rem; }
+            .iste-text { font-size: 1rem; line-height: 1.7; }
+            .iste-stats-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .iste-stat-number { font-size: 2rem; }
+            .iste-activities-list li { font-size: 1rem; padding: 0.8rem 1.2rem; }
+            .iste-cta-section { flex-direction: column; gap: 1rem; }
+            .iste-cta-section .cta-button { width: 100%; }
+        }
+        @media (max-width: 480px) {
+            .about-iste-section { padding: 5rem 1rem 2.5rem; }
+            .iste-info-box { padding: 1.2rem; border-radius: 15px; }
+            .iste-section-title { font-size: 1.3rem; letter-spacing: 1.5px; }
+            .iste-text { font-size: 0.95rem; }
+            .iste-stat-number { font-size: 1.8rem; }
+            .iste-stat-label { font-size: 0.9rem; }
+            .iste-activities-list li { font-size: 0.95rem; padding: 0.7rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="space-background">
+        <div class="stars"></div>
+        <div class="meteors"></div>
+    </div>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <a href="index.html" class="logo-link" aria-label="Home">
+                    <img src="210842040_186984500046314_1943796015003147961_n.jpg" alt="ISTE Logo" class="iste-logo">
+                    <h1 class="society-name">ISTE SCTCE</h1>
+                </a>
+            </div>
+            <div class="header-center-logo">
+                <img src="istelogofinal-removebg-preview.png" alt="ISTE Logo" class="center-logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link" aria-label="Home" title="Home"><img src="home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Home icon" class="nav-icon" role="img" aria-hidden="true"></a>
+                <a href="index.html#events" class="nav-link" aria-label="Events" title="Events"><img src="event_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Events icon" class="nav-icon" role="img" aria-hidden="true"></a>
+                <a href="index.html#contact" class="nav-link contact-link" aria-label="Contact" title="Contact"><img src="mail_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Contact icon" class="nav-icon" role="img" aria-hidden="true"></a>
+                <div class="more-menu">
+                    <button class="more-button nav-link" aria-haspopup="true" aria-expanded="false" aria-label="More menu" title="More">
+                        <img src="more_vert_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="More icon" class="nav-icon" role="img" aria-hidden="true">
+                    </button>
+                    <div class="more-dropdown" role="menu" aria-label="More menu items">
+                        <a href="execom.html" class="more-item execom-link" role="menuitem" aria-label="Execom Members" title="Execom Members">
+                            <img src="groups_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Execom" class="dropdown-icon">
+                        </a>
+                        <a href="forums.html" class="more-item forum-link" role="menuitem" aria-label="Forums" title="Forums">
+                            <img src="communities_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Forums" class="dropdown-icon">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="about-iste-section">
+        <div class="container">
+            <h1 class="page-title">ABOUT ISTE</h1>
+            <p class="page-subtitle">Indian Society for Technical Education</p>
+            <div class="about-iste-content">
+                <div class="iste-info-box">
+                    <h2 class="iste-section-title">History & Mission</h2>
+                    <p class="iste-text">
+                        The <strong>Indian Society for Technical Education (ISTE)</strong> is a national, professional, non-profit organization of educators in engineering and technology. It originated as the <strong>Association of Principals of Technical Institutions (APTI)</strong> in <strong>1941</strong> at Delhi Polytechnic and was renamed ISTE on <strong>21 May 1968</strong>, expanding its scope to include all stakeholders in technical education. Headquartered in <strong>New Delhi</strong>, ISTE is dedicated to improving the quality and standards of technical education in India.
+                    </p>
+                </div>
+                <div class="iste-info-box">
+                    <h2 class="iste-section-title">Objectives</h2>
+                    <p class="iste-text">
+                        Its main objectives include formulating goals for technical education, developing effective teachers, updating curricula, promoting research, and strengthening industry–institution–society relationships. ISTE strives to enhance professional ideals among teachers and foster personality development among students.
+                    </p>
+                </div>
+                <div class="iste-info-box">
+                    <h2 class="iste-section-title">Network & Reach</h2>
+                    <div class="iste-stats-grid">
+                        <div class="iste-stat-item">
+                            <div class="iste-stat-number">100,000+</div>
+                            <div class="iste-stat-label">Faculty Members</div>
+                        </div>
+                        <div class="iste-stat-item">
+                            <div class="iste-stat-number">500,000+</div>
+                            <div class="iste-stat-label">Student Members</div>
+                        </div>
+                        <div class="iste-stat-item">
+                            <div class="iste-stat-number">2,000+</div>
+                            <div class="iste-stat-label">Institutional Chapters</div>
+                        </div>
+                    </div>
+                    <p class="iste-text" style="margin-top: 1.5rem;">
+                        The society has a vast network with over <strong>100,000 faculty members</strong>, <strong>500,000+ student members</strong>, and <strong>2,000+ institutional chapters</strong> across India. It operates through <strong>state sections</strong>, <strong>faculty chapters</strong>, and <strong>student chapters</strong>, coordinated by a <strong>National Executive Council</strong>.
+                    </p>
+                </div>
+                <div class="iste-info-box">
+                    <h2 class="iste-section-title">Major Activities</h2>
+                    <ul class="iste-activities-list">
+                        <li>Faculty Development Programs</li>
+                        <li>Seminars and Workshops</li>
+                        <li>Student Conventions</li>
+                        <li>Technical Paper Contests</li>
+                        <li>Curriculum Innovation</li>
+                        <li>Industry-Academia Collaboration</li>
+                        <li>Awards, Fellowships, and Scholarships</li>
+                    </ul>
+                </div>
+                <div class="iste-info-box">
+                    <h2 class="iste-section-title">Collaboration & Impact</h2>
+                    <p class="iste-text">
+                        Working closely with <strong>AICTE</strong>, <strong>NBA</strong>, and other government bodies, ISTE plays a vital role in policy-making and academic reform. It provides a platform for teachers and students to exchange ideas, enhance skills, and adapt to emerging technologies such as <strong>AI</strong>, <strong>IoT</strong>, and <strong>data science</strong>.
+                    </p>
+                </div>
+                <div class="iste-info-box highlight-box">
+                    <h2 class="iste-section-title">Legacy</h2>
+                    <p class="iste-text">
+                        In essence, ISTE is the <strong>oldest and largest professional body</strong> advancing technical education in India through innovation, collaboration, and continuous improvement.
+                    </p>
+                </div>
+                <div class="iste-cta-section">
+                    <a href="join.html" class="cta-button">Join ISTE Chapter</a>
+                    <a href="index.html" class="cta-button cta-button-secondary">Back to Home</a>
+                    <a href="https://www.isteonline.in/" target="_blank" rel="noopener noreferrer" class="cta-button cta-button-secondary">Visit Official ISTE Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ISTE SCTCE</h3>
+                    <p>Indian Society for Technical Education<br>Sree Chithra Thirunal College of Engineering</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#events">Events</a>
+                    <a href="execom.html">Execom Members</a>
+                    <a href="index.html#contact">Contact Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Facebook</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: iste@sctce.ac.in</p>
+                    <p>Phone: +91 XXXX XXXXXX</p>
+                    <div class="location-info">
+                        <h4>Find Us</h4>
+                        <p class="address">NH 66, CTO Colony, Pappanamcode,<br>Thiruvananthapuram, Kerala 695018</p>
+                        <a href="https://www.google.com/maps/place/Sree+Chitra+Thirunal+College+of+Engineering,+Thiruvananthapuram/@8.4705885,76.9382283,11913m/data=!3m1!1e3!4m6!3m5!1s0x3b05baee56e6b99b:0x4ce024c88eb0ddcb!8m2!3d8.4705058!4d76.9794284!16zL20vMGZrMzR2!5m1!1e2" class="map-link" target="_blank">
+                            <i class="map-icon">📍</i> View on Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ISTE SCTCE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

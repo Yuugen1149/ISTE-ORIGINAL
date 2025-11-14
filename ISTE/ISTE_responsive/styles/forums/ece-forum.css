@@ -1,0 +1,66 @@
+/* ============================================
+   ECE Forum Styles
+   ============================================ */
+
+.ece-forum-section {
+    padding: 28rem 2rem 5rem;
+    min-height: 10vh;
+}
+
+.ece-forum-header {
+    text-align: center;
+    margin: 0.5rem 0 0.5rem 0;  /* Reduced bottom margin from 1.5rem to 0.5rem */
+    padding-top: 1px;
+}
+
+.ece-forum-icon {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;  /* Reduced from 1rem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4a90e2; /* Blue color for ECE */
+}
+
+.ece-forum-icon img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ece-forum-info {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.ece-forum-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .ece-forum-section {
+        padding: 25rem 1.5rem 3rem;
+    }
+    
+    .ece-forum-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ece-forum-section {
+        padding: 22rem 1rem 2rem;
+    }
+    
+    .ece-forum-icon {
+        font-size: 4rem;
+    }
+}
