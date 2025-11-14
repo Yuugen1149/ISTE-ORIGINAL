@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration - ISTE</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/registration.css" />
+</head>
+<body>
+    <!-- Animated Space Background -->
+    <div class="space-background">
+        <div class="stars"></div>
+        <div class="meteors"></div>
+    </div>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <a href="index.html" class="logo-link" aria-label="Home">
+                    <img src="210842040_186984500046314_1943796015003147961_n.jpg" alt="ISTE Logo" class="iste-logo">
+                    <h1 class="society-name">ISTE SCTCE</h1>
+                </a>
+            </div>
+            <div class="header-center-logo">
+                <img src="istelogofinal-removebg-preview.png" alt="ISTE Logo" class="center-logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link" aria-label="Home" title="Home"><img src="home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Home icon" class="nav-icon"></a>
+                <a href="workshop.html" class="nav-link" aria-label="Events" title="Events"><img src="event_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Events icon" class="nav-icon"></a>
+                <a href="#contact" class="nav-link contact-link" aria-label="Contact" title="Contact"><img src="mail_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Contact icon" class="nav-icon"></a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="registration-main">
+        <article class="container">
+            <section class="registration-section">
+                <h1 class="page-title">ISTE Membership Registration</h1>
+                <form id="registration-form" class="registration-form glass-effect">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <select id="year" name="year" required>
+                            <option value="">Select Year</option>
+                            <option value="1">First Year</option>
+                            <option value="2">Second Year</option>
+                            <option value="3">Third Year</option>
+                            <option value="4">Fourth Year</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="branch">Branch of Study</label>
+                        <select id="branch" name="branch" required>
+                            <option value="">Select branch</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Electronics and Communication">Electronics and Communication</option>
+                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            <option value="Civil Engineering">Civil Engineering</option>
+                            <option value="Electrical and Electronics">Electrical and Electronics</option>
+                            <option value="Information Technology">Information Technology</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number (10 digits)</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <p class="membership-options-title">Membership Options</p>
+                        <div class="radio-group">
+                            <input type="radio" id="full-membership" name="membership" value="1400" required />
+                            <label for="full-membership">ISTE + FULL MEMBERSHIP: ₹1400/-</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="bartonair" name="membership" value="1000" />
+                            <label for="bartonair">ISTE + BARTONAIR: ₹1000/-</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="bartonoidz" name="membership" value="1000" />
+                            <label for="bartonoidz">ISTE + BARTONOIDZ: ₹1000/-</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="screenshot">Screenshot of Payment* (File size less than 4 MB)</label>
+                        <input type="file" id="screenshot" name="screenshot" accept="image/*,application/pdf" required />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+                <div id="submission-status"></div>
+            </section>
+        </article>
+    </main>
+    <script type="module" src="scripts/registration.js"></script>
+</body>
+</html>
