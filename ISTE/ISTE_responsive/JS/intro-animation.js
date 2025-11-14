@@ -1,7 +1,7 @@
 // Optimized intro animation with better performance
 const IntroAnimation = (() => {
     const DURATION = 5000;
-    const LOGO_SRC = 'istelogofinal-removebg-preview.png';
+    const LOGO_SRC = '../IMAGES/istelogofinal-removebg-preview.png';
     
     const createIntroElement = () => {
         const wrapper = document.createElement('div');

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration - ISTE</title>
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/registration.css" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/registration.css" />
 </head>
 <body>
     <!-- Animated Space Background -->
@@ -18,17 +18,30 @@
         <div class="header-content">
             <div class="logo-section">
                 <a href="index.html" class="logo-link" aria-label="Home">
-                    <img src="210842040_186984500046314_1943796015003147961_n.jpg" alt="ISTE Logo" class="iste-logo">
+                    <img src="../IMAGES/210842040_186984500046314_1943796015003147961_n.jpg" alt="ISTE Logo" class="iste-logo" loading="lazy">
                     <h1 class="society-name">ISTE SCTCE</h1>
                 </a>
             </div>
             <div class="header-center-logo">
-                <img src="istelogofinal-removebg-preview.png" alt="ISTE Logo" class="center-logo">
+                <img src="../IMAGES/istelogofinal-removebg-preview.png" alt="ISTE Logo" class="center-logo" loading="eager">
             </div>
             <nav class="nav-menu">
-                <a href="index.html" class="nav-link" aria-label="Home" title="Home"><img src="home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Home icon" class="nav-icon"></a>
-                <a href="workshop.html" class="nav-link" aria-label="Events" title="Events"><img src="event_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Events icon" class="nav-icon"></a>
-                <a href="#contact" class="nav-link contact-link" aria-label="Contact" title="Contact"><img src="mail_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Contact icon" class="nav-icon"></a>
+                <a href="index.html" class="nav-link" aria-label="Home" title="Home"><img src="../ICON/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Home icon" class="nav-icon" role="img" aria-hidden="true"></a>
+                <a href="index.html#events" class="nav-link" aria-label="Events" title="Events"><img src="../ICON/event_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Events icon" class="nav-icon" role="img" aria-hidden="true"></a>
+                <a href="index.html#contact" class="nav-link contact-link" aria-label="Contact" title="Contact"><img src="../ICON/mail_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Contact icon" class="nav-icon" role="img" aria-hidden="true"></a>
+                <div class="more-menu">
+                    <button class="more-button nav-link" aria-haspopup="true" aria-expanded="false" aria-label="More menu" title="More">
+                        <img src="../ICON/more_vert_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="More icon" class="nav-icon" role="img" aria-hidden="true">
+                    </button>
+                    <div class="more-dropdown" role="menu" aria-label="More menu items">
+                        <a href="execom.html" class="more-item execom-link" role="menuitem" aria-label="Execom Members" title="Execom Members">
+                            <img src="../ICON/groups_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Execom" class="dropdown-icon">
+                        </a>
+                        <a href="forums.html" class="more-item forum-link" role="menuitem" aria-label="Forums" title="Forums">
+                            <img src="../ICON/communities_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Forums" class="dropdown-icon">
+                        </a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -79,16 +92,16 @@
                     <div class="form-group">
                         <p class="membership-options-title">Membership Options</p>
                         <div class="radio-group">
-                            <input type="radio" id="full-membership" name="membership" value="1400" required />
-                            <label for="full-membership">ISTE + FULL MEMBERSHIP: ₹1400/-</label>
+                            <input type="radio" id="four-year-membership" name="membership" value="2000" required />
+                            <label for="four-year-membership">Four-Year ISTE Membership: ₹2000/-</label>
                         </div>
                         <div class="radio-group">
-                            <input type="radio" id="bartonair" name="membership" value="1000" />
-                            <label for="bartonair">ISTE + BARTONAIR: ₹1000/-</label>
+                            <input type="radio" id="one-year-membership" name="membership" value="650" />
+                            <label for="one-year-membership">One-Year ISTE Membership: ₹650/-</label>
                         </div>
                         <div class="radio-group">
-                            <input type="radio" id="bartonoidz" name="membership" value="1000" />
-                            <label for="bartonoidz">ISTE + BARTONOIDZ: ₹1000/-</label>
+                            <input type="radio" id="two-year-membership" name="membership" value="1250" />
+                            <label for="two-year-membership">Two-Year ISTE Membership (2nd Years Only): ₹1250/-</label>
                         </div>
                     </div>
                     <div class="form-group">
@@ -101,6 +114,41 @@
                 </form>
                 <div id="submission-status"></div>
             </section>
+
+            <!-- Fee Structure Poster -->
+            <section class="fee-poster">
+                <h2 class="fee-poster-title">Date With Us</h2>
+                <p class="fee-poster-subtitle">ISTE Student Chapter – Membership & Forum Fee Structure</p>
+                
+                <div class="fee-grid">
+                    <div class="fee-card">
+                        <h3 class="fee-card-title">1-Year ISTE</h3>
+                        <p class="fee-card-price">₹650</p>
+                        <p class="fee-card-description">Valid for one academic year. Forum fees are additional.</p>
+                    </div>
+                    <div class="fee-card">
+                        <h3 class="fee-card-title">2-Year ISTE</h3>
+                        <p class="fee-card-price">₹1,250</p>
+                        <p class="fee-card-description">For second years only. One forum free for one year.</p>
+                    </div>
+                    <div class="fee-card best-value">
+                        <div class="best-value-badge">Best Value</div>
+                        <h3 class="fee-card-title">4-Year ISTE</h3>
+                        <p class="fee-card-price">₹2,000</p>
+                        <p class="fee-card-description">Valid for all 4 years. Any two forums free for one year.</p>
+                    </div>
+                </div>
+
+                <div class="summary-section">
+                    <h3 class="summary-title">Forum Membership (Per Year)</h3>
+                    <ul class="summary-list">
+                        <li><strong>SWaS Forum:</strong> ₹2,200</li>
+                        <li><strong>EXIS Forum:</strong> ₹150</li>
+                        <li><strong>CS & Mechanical Forums:</strong> ₹100</li>
+                    </ul>
+                </div>
+            </section>
+
         </article>
     </main>
     <!-- Footer -->
@@ -114,14 +162,13 @@
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <a href="index.html">Home</a>
-                    <a href="workshop.html">Events</a>
+                    <a href="index.html#events">Events</a>
                     <a href="execom.html">Execom Members</a>
                     <a href="#contact">Contact Us</a>
                 </div>
                 <div class="footer-section">
                     <h3>Social Media</h3>
-                    <!-- TODO: Add actual social media links -->
-                    <a href="https://www.instagram.com/yuugen_a_r_s/# " target="_blank">Instagram</a>
+                    <a href="#">Instagram</a>
                     <a href="#">LinkedIn</a>
                     <a href="#">Facebook</a>
                 </div>
@@ -132,7 +179,7 @@
                     <div class="location-info">
                         <h4>Find Us</h4>
                         <p class="address">NH 66, CTO Colony, Pappanamcode,<br>Thiruvananthapuram, Kerala 695018</p>
-                        <a href="https://www.google.com/maps/place/Sree+Chitra+Thirunal+College+of+Engineering,+Thiruvananthapuram/@8.4705885,76.9382283,11913m/data=!3m1!1e3!4m6!3m5!1s0x3b05baee56e6b99b:0x4ce024c88eb0ddcb!8m2!3d8.4705058!4d76.9794284!16zL20vMGZrMzR2!5m1!1e2" class="map-link" target="_blank">
+                        <a href="https://www.google.com/maps/place/Sree+Chitra+Thirunal+College+of+Engineering,+Thiruvananthapuram/@8.4705885,76.9382283,11913m/data=!3m1!1e3!4m6!3m5!1s0x3b05baee56e6b99b:0x4ce024c88eb0ddcb!8m2!3d8.4705058!4d76.9794284!16zL20vMGZrMzR2!5m1!1e2" class="map-link" target="_blank" rel="noopener noreferrer">
                             <i class="map-icon">📍</i> View on Google Maps
                         </a>
                     </div>
@@ -146,12 +193,12 @@
 
 
     <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js" defer></script>
 
     <!-- Your custom scripts -->
-    <script src="scripts/registration.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="../JS/registration.js" defer></script>
+    <script src="../JS/main.js" defer></script>
 </body>
 </html>
